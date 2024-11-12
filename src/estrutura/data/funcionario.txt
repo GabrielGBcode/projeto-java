@@ -1,0 +1,3 @@
+Alvares Teixiera,12345678901,alvarenga@gmail.com,(31) 91111-2222,Rua Jo�o,1546,Vila Mariana,S�o Paulo,SP,Brasil,Masculino,1998-04-01,0
+Gabriel,12345678910,gabrielgb.xyz@gmail.com,(31) 975454409,Rua a,4321,Barreiro,Belo Horzionte,Minas Gerais,Brasil,Masculino,2003-08-30,0
+Olavo de Carvalho,12345678971,otavio@gmail.com,(11) 99999-9999,Rua João Pessoa,123,Campo Limpo,São Paulo,SP,Brasil,Masculino,1990-01-01,0

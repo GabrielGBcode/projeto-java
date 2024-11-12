@@ -1,0 +1,119 @@
+package estrutura;
+
+import comportamento.cliente.*;
+import comportamento.estoque.*;
+import comportamento.funcionario.*;
+import comportamento.orcamento.*;
+import comportamento.servico.*;
+import java.time.LocalDate;
+
+public class Main {
+        public static void main(String[] args) throws Exception {
+                // FUNCIONÁRIO
+                CadastroFuncionario cadastro;
+                cadastro = new CadastroFuncionario();
+                cadastro.cadastrarFuncionario("Otavio Alcantra", "12345678901",
+                                "otavio@gmail.com", "(11) 99999-9999",
+                                "Rua João Pessoa", 123, "Timão", "São Paulo", "SP", "Brasil", true,
+                                LocalDate.of(1990,
+                                                1,
+                                                1));
+
+                System.out.println("----- ----- ----- -----");
+
+                ConsultaFuncionario consulta = new ConsultaFuncionario();
+                consulta.consultarFuncionario("12345678901");
+
+                System.out.println("----- ----- ----- -----");
+
+                EditarFuncionario editar = new EditarFuncionario();
+                editar.editarFuncionario("12345678971", "Olavo de Carvalho",
+                                "otavio@gmail.com", "(11) 99999-9999",
+                                "Rua João Pessoa", 123, "Campo Limpo", "São Paulo", "SP", "Brasil", true,
+                                LocalDate.of(1990,
+                                                1,
+                                                1));
+
+                System.out.println("--------------------------------------------------------------------------------");
+
+                // CLIENTE
+                CadastroCliente cadastroCliente;
+                cadastroCliente = new CadastroCliente();
+                cadastroCliente.cadastrarCliente("Madalena", "18675412212",
+                                "Madalena@gmail.com", "(11) 99999-9999",
+                                "Rua Abreu", 123, "Vila Nova", "Boa Esperança", "MG", "Brasil", false,
+                                LocalDate.of(1990,
+                                                1,
+                                                1));
+
+                System.out.println("----- ----- ----- -----");
+
+                ConsultaCliente consultaCliente = new ConsultaCliente();
+                consultaCliente.consultarCliente("18675412212");
+
+                System.out.println("----- ----- ----- -----");
+
+                EditarCliente editarCliente = new EditarCliente();
+                editarCliente.editarCliente("10987654321", "Luiz Otávio",
+                                "LuizOtavio@gmail.com", "(11) 99999-9999",
+                                "Rua Abreu", 1234, "Vila Nova", "São Paulo", "SP", "Brasil", true,
+                                LocalDate.of(1990,
+                                                1,
+                                                1));
+
+                System.out.println("--------------------------------------------------------------------------------");
+                // VEÍCULO
+
+                Veiculo veiculo = new Veiculo();
+                veiculo.cadastrarVeiculo("ABC1234", "Fiat", "Punto", 2021, "18675412212");
+                veiculo.cadastrarVeiculo("CBA4321", "Fiat", "Punto", 2014, "18675412212");
+
+                System.out.println("----- ----- ----- -----");
+
+                veiculo.consultarVeiculo("ABC1234");
+
+                System.out.println("----- ----- ----- -----");
+
+                veiculo.consultarVeiculoPorCPF("18675412212");
+
+                System.out.println("----- ----- ----- -----");
+
+                veiculo.editarVeiculo("ABC1234", "Fiat", "Palio", 2022, "18675412212");
+
+                System.out.println("--------------------------------------------------------------------------------");
+                // ORCAMENTO
+
+                Orcamento orcamento = new Orcamento();
+                orcamento.cadastrarOrcamento(false, true, false, false, false, false, "18675412212");
+
+                System.out.println("----- ----- ----- -----");
+
+                CadastroEstoque cadastroEstoque = new CadastroEstoque();
+                cadastroEstoque.cadastrarEstoque(19, "Óleo de moto", 100);
+
+                System.out.println("----- ----- ----- -----");
+
+                ConsultaEstoque consultaEstoque = new ConsultaEstoque();
+                consultaEstoque.consultarEstoque(3);
+
+                System.out.println("----- ----- ----- -----");
+
+                EditarEstoque editarEstoque = new EditarEstoque();
+                editarEstoque.editarEstoque(3, "Filtro de ar", 200);
+
+                System.out.println("----- ----- ----- -----");
+
+                Revisao revisao = new Revisao();
+                revisao.aprovarOrcamento(3);
+
+                System.out.println("----- ----- ----- -----");
+
+                revisao.realizarServico(1); // Solicita apenas um serviço
+                System.out.println("----- ----- ----- -----");
+                revisao.realizarServico(2); // Solicita alguns serviços, porém não é aprovado
+                System.out.println("----- ----- ----- -----");
+                revisao.realizarServico(3); // Solicita todos os serviços e recebe 10% de desconto
+                System.out.println("----- ----- ----- -----");
+                revisao.realizarServico(4); // Não existe orçamento com esse ID
+        }
+}

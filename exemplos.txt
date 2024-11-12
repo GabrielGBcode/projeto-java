@@ -1,0 +1,106 @@
+// Exemplo 1
+cadastro.cadastrarFuncionario("Maria Santos", "98765432100",
+                              "maria.santos@example.com", "(21) 98888-8888",
+                              "Avenida Brasil", 456, "Rio de Janeiro", "Rio de Janeiro", "RJ", "Brasil", false,
+                              LocalDate.of(1985, 5, 15));
+
+// Exemplo 2
+cadastro.cadastrarFuncionario("Carlos Silva", "11223344556",
+                              "carlos.silva@example.com", "(31) 97777-7777",
+                              "Rua das Flores", 789, "Belo Horizonte", "Minas Gerais", "MG", "Brasil", true,
+                              LocalDate.of(1992, 8, 23));
+
+// Exemplo 3
+cadastro.cadastrarFuncionario("Ana Oliveira", "99887766554",
+                              "ana.oliveira@example.com", "(41) 96666-6666",
+                              "Rua Curitiba", 101, "Curitiba", "Paraná", "PR", "Brasil", false,
+                              LocalDate.of(1988, 12, 10));
+
+// Exemplo 4
+cadastro.cadastrarFuncionario("João Pereira", "22334455667",
+                              "joao.pereira@example.com", "(61) 95555-5555",
+                              "Avenida Central", 202, "Brasília", "Distrito Federal", "DF", "Brasil", true,
+                              LocalDate.of(1995, 3, 3));
+
+// Exemplo 5
+cadastro.cadastrarFuncionario("Beatriz Costa", "33445566778",
+                              "beatriz.costa@example.com", "(51) 94444-4444",
+                              "Rua Principal", 303, "Porto Alegre", "Rio Grande do Sul", "RS", "Brasil", false,
+                              LocalDate.of(1982, 7, 21));
+
+
+
+
+
+// Exemplo 1
+cadastroCliente1.cadastrarCliente("Joaquim Souza", "12345678901",
+                                  "joaquim.souza@example.com", "(21) 98888-8888",
+                                  "Rua Flores", 45, "Centro", "Rio de Janeiro", "RJ", "Brasil", true,
+                                  LocalDate.of(1982, 4, 25));
+
+// Exemplo 2
+cadastroCliente2.cadastrarCliente("Larissa Silva", "98765432100",
+                                  "larissa.silva@example.com", "(31) 97777-7777",
+                                  "Avenida Paulista", 789, "Bela Vista", "São Paulo", "SP", "Brasil", false,
+                                  LocalDate.of(1995, 9, 12));
+
+// Exemplo 3
+cadastroCliente3.cadastrarCliente("Paulo Almeida", "11223344556",
+                                  "paulo.almeida@example.com", "(41) 96666-6666",
+                                  "Rua XV de Novembro", 22, "Centro", "Curitiba", "PR", "Brasil", true,
+                                  LocalDate.of(1988, 2, 18));
+
+// Exemplo 4
+cadastroCliente4.cadastrarCliente("Camila Ramos", "33445566778",
+                                  "camila.ramos@example.com", "(61) 95555-5555",
+                                  "Setor Sul", 1234, "Plano Piloto", "Brasília", "DF", "Brasil", false,
+                                  LocalDate.of(1992, 11, 30));
+
+// Exemplo 5
+cadastroCliente5.cadastrarCliente("Rafael Costa", "55667788990",
+                                  "rafael.costa@example.com", "(51) 94444-4444",
+                                  "Rua da Praia", 678, "Centro Histórico", "Porto Alegre", "RS", "Brasil", true,
+                                  LocalDate.of(1985, 5, 8));
+
+
+
+
+
+// Exemplo 1
+veiculo.cadastrarVeiculo("XYZ9876", "Volkswagen", "Gol", 2018, "12345678901");
+
+// Exemplo 2
+veiculo.cadastrarVeiculo("DEF4567", "Chevrolet", "Onix", 2020, "98765432100");
+
+// Exemplo 3
+veiculo.cadastrarVeiculo("GHI7890", "Toyota", "Corolla", 2022, "11223344556");
+
+// Exemplo 4
+veiculo.cadastrarVeiculo("JKL0123", "Honda", "Civic", 2019, "33445566778");
+
+// Exemplo 5
+veiculo.cadastrarVeiculo("MNO3456", "Renault", "Kwid", 2021, "55667788990");
+
+
+
+
+
+
+// Exemplo 1
+orcamento.cadastrarOrcamento(true, false, true, false, false, true, "12345678901");
+
+// Exemplo 2
+orcamento.cadastrarOrcamento(false, true, true, true, false, false, "98765432100");
+
+// Exemplo 3
+orcamento.cadastrarOrcamento(false, false, false, true, true, false, "11223344556");
+
+// Exemplo 4
+orcamento.cadastrarOrcamento(true, true, false, false, true, false, "33445566778");
+
+// Exemplo 5
+orcamento.cadastrarOrcamento(false, false, true, true, false, true, "55667788990");
+
+
+PaginaInicial paginaInicial = new PaginaInicial();
+                paginaInicial.IniciarPaginaInicial();

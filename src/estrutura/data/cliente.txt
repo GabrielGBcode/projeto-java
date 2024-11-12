@@ -1,0 +1,2 @@
+Luiz Otávio,10987654321,LuizOtavio@gmail.com,(11) 99999-9999,Rua Abreu,1234,Vila Nova,São Paulo,SP,Brasil,Masculino,1990-01-01,0
+Madalena,18675412212,Madaleninha@gmail.com,(11) 99999-9999,Rua Abreu,123,Vila Nova,Boa Esperan�a,MG,Brasil,Feminino,1995-01-01,0

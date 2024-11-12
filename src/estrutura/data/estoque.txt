@@ -1,0 +1,17 @@
+1 - Óleo de motor - 200
+2 - Filtro de óleo - 93
+3 - Filtro de ar - 198
+4 - Filtro de combustível - 93
+5 - Filtro de cabine - 93
+6 - Pastilha - 96
+7 - Disco - 96
+8 - Fluido de freio - 96
+9 - Amortecedor - 97
+10 - Mola - 97
+11 - Bucha - 97
+12 - Pivô - 97
+13 - Bateria - 97
+14 - Alternador - 97
+15 - Motor de arranque - 97
+16 - Iluminação - 97
+17 - Sensores - 97
